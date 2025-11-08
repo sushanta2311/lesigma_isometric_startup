@@ -1,0 +1,60 @@
+.counters-card {
+    padding: 120px 0;
+
+    @media #{$maxSmall} {
+        padding-top   : 45px;
+        padding-bottom: 35px;
+    }
+
+    .counters {
+        background-color: #FFF4F0;
+        display         : inline-flex;
+        align-items     : center;
+        padding         : 12px 42px;
+        cursor          : pointer;
+
+        @media #{$maxTablet} {
+            margin: 25px auto;
+        }
+
+        @media screen and (min-width:992px) and (max-width:1200px) {
+            padding: 15px 20px;
+        }
+
+        img {
+            margin-right: 20px;
+        }
+
+        i {
+            margin-right: 30px;
+            color       : $color-theme;
+            font-size   : 70px;
+        }
+
+        .counters-content {
+            flex-grow      : 1;
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            align-items    : center;
+
+            .counting {
+                font-family: $font-secondary;
+                font-size  : 35px;
+                font-weight: 700;
+                line-height: 1.5;
+                color      : $color-heading;
+                width      : 80px;
+                display    : block;
+                text-align : center;
+            }
+
+            .type {
+                font-size     : 14px;
+                line-height   : 1.5;
+                color         : $color-body;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
